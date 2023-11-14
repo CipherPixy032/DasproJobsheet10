@@ -1,5 +1,6 @@
 public class Bioskop15 {
     public static void main(String[] args) {
+
         String[][] audience = new String[4][2];
         audience[0][0] = "Amin";
         audience[0][1] = "Bena";
@@ -15,6 +16,10 @@ public class Bioskop15 {
         }
         for (String[] rowAudience : audience) {
             System.out.println("Length of row: " + rowAudience.length);
+        }
+        System.out.println("Audience in the row 3: ");
+        for (int i = 0; i < audience[2].length; i++){
+            System.out.println(audience[2][i]);
         }
         System.out.printf("%s \t %s\n", audience[0][0], audience[0][1]);
         System.out.printf("%s \t %s\n", audience[1][0], audience[1][1]);
